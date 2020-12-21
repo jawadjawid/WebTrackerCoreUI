@@ -90,7 +90,7 @@ namespace QueueApp
 
         public static void Run(string url, string email)
         {
-            string uri = $"https://nodetracker.azurewebsites.net/api/screenshot?url={url}&email={email}";
+            string uri = $"https://nodetracker.azurewebsites.net/api/screenshot?url={url}&email={email}&modify=true";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
             request.Method = "GET";
 
