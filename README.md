@@ -14,7 +14,7 @@ A simple tool to track any website and notify you when that website changes.
 
 ### Other related repos (Used the Microservice architecture to improve seperation of concerns)
 - [The function that does the intial scraping](https://github.com/jawadjawid/trackerAutomation){target="_blank"}:
-%md <a href="https://google.com" target="_blank">google link</a>
+<a href="http://example.com/" target="_blank">example</a>
 This runs when a track request is submitted, it scrapes the website and stores its data in a MongoDB.
 - [The Time triggered fucntion](https://github.com/jawadjawid/webTrackerContinuousAzureFunc){:target="_blank"}:
 This function runs every minute, does a another scraping on every website in the db, and send a signal when the website content changes. 
