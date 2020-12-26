@@ -12,7 +12,7 @@ A simple tool to track any website and notify you when that website changes.
 - MongoDB: Used tos store all website and email data.
 - ASP.Net MVC, HTML, CSS, JS: Used to create the frontend of the website.
 
-### Other related repos (Used the Microservice architecture to improve seperation of concerns):
+### Other related repos (Used the Microservice architecture to implement seperation of concerns):
 - [The function that does the intial scraping](https://github.com/jawadjawid/trackerAutomation):
 This runs when a track request is submitted, it scrapes the website and stores its data in a MongoDB.
 - [The Time triggered fucntion](https://github.com/jawadjawid/webTrackerContinuousAzureFunc):
