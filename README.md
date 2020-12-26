@@ -20,7 +20,8 @@ This function runs every minute, does a another scraping on every website in the
 
 ### How to run locally:
 Unfortunately I have decided to stop running the azure functions on the cloud for cost purposes, but you can still run it locally.
-1. [The function that does the intial scraping](https://github.com/jawadjawid/trackerAutomation):
-This runs when a track request is submitted, it scrapes the website and stores its data in a MongoDB.
+1. Open a terminal or a cmd on your local machine and type the following command:
+> I’ve always been more interested
+> in the future than in the past.
 2. [The Time triggered fucntion](https://github.com/jawadjawid/webTrackerContinuousAzureFunc):
 This function runs every minute, does a another scraping on every website in the db, and send a signal when the website content changes.
