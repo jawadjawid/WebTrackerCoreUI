@@ -20,8 +20,24 @@ This function runs every minute, does a another scraping on every website in the
 
 ### How to run locally:
 Unfortunately I have decided to stop running the azure functions on the cloud for cost purposes, but you can still run it locally.
-1. Open a terminal or a cmd on your local machine and type the following command:
-> I’ve always been more interested
-> in the future than in the past.
-2. [The Time triggered fucntion](https://github.com/jawadjawid/webTrackerContinuousAzureFunc):
-This function runs every minute, does a another scraping on every website in the db, and send a signal when the website content changes.
+1. Clone this repo to your local machine and using a terminal, navigate to "WebTrackerCoreUI/WebTrackerCoreUI" then run:
+>  dotnet run
+2. Open https://localhost:5001 in your browser and ignore saftey concerns (trust me)
+3. Clone [The function that does the intial scraping](https://github.com/jawadjawid/trackerAutomation)
+4. Navigate to trackerAutomation from another terminal and run:
+>  npm install
+> npm start
+5. You will need the url you get in the terminal later
+6. Clone [The Time triggered fucntion](https://github.com/jawadjawid/webTrackerContinuousAzureFunc)
+7. Navigate to webTrackerContinuous\webTrackerContinuous from a third terminal
+8. Edit webTrackerContinuous\webTrackerContinuous\Function1.cs in your fav text editor and update:
+   - The email sender's email adn pass
+   - the azure func link from step 5
+9. After saving, run the following command in webTrackerContinuous\webTrackerContinuous:
+> func start
+10. Go back to the https://localhost:5001 tab you opned in step 2, and everything should be working as expected
+
+
+
+
+
