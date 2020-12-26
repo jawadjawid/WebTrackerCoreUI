@@ -9,9 +9,11 @@ A simple tool to track any website and notify you when that website changes.
 ## Technologies used:
 - Node.js/JS: Used with Puppeteer to run the the intial website scrapper (Hosted in Azure).
 - C#: Used for the timed azure functuon that runs every minute to detect any changes, and the main contoller in the backend.
-- MongoDB: Used tos tore all website and email data.
+- MongoDB: Used tos store all website and email data.
 - ASP.Net MVC, HTML, CSS, JS: Used to create the frontend of the website.
 
-### Other related repos:
-- [The function that does the intial scraping](https://github.com/jawadjawid/trackerAutomation)
-- [The Time triggered fucntion](Link URL)
+### Other related repos (Used the Microservice architecture to improve seperation of concerns)
+- [The function that does the intial scraping](https://github.com/jawadjawid/trackerAutomation):
+This runs when a track request is submitted, it scrapes the website and stores its data in a MongoDB.
+- [The Time triggered fucntion](https://github.com/jawadjawid/webTrackerContinuousAzureFunc):
+This function runs every minute, does a another scraping on every website in the db, and send a signal when the website content changes. 
