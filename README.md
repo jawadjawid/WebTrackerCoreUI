@@ -11,6 +11,7 @@ A simple tool to track any website and notify you when that website changes.
 - C#: Used for the timed azure functuon that runs every minute to detect any changes, and the main contoller in the backend.
 - MongoDB: Used tos store all website and email data.
 - ASP.Net MVC, HTML, CSS, JS: Used to create the frontend of the website.
+- Originally deployed to a Linux virtual machine in the cloud
 
 ### Other related repos (Used the Microservice architecture to implement seperation of concerns):
 - [The function that does the intial scraping](https://github.com/jawadjawid/trackerAutomation):
