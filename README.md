@@ -26,6 +26,7 @@ Unfortunately I have decided to stop running the azure functions on the cloud fo
 3. Clone [The function that does the intial scraping](https://github.com/jawadjawid/trackerAutomation)
 4. Navigate to trackerAutomation from another terminal and run:
 >  npm install
+then
 > npm start
 5. You will need the url you get in the terminal later
 6. Clone [The Time triggered fucntion](https://github.com/jawadjawid/webTrackerContinuousAzureFunc)
