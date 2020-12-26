@@ -29,15 +29,18 @@ Unfortunately I have decided to stop running the azure functions on the cloud fo
     <p>npm install</p>
     <p>npm start</p>
 </blockquote>
+
 5. You will need the url you get in the terminal later
 6. Clone [The Time triggered fucntion](https://github.com/jawadjawid/webTrackerContinuousAzureFunc)
 7. Navigate to webTrackerContinuous\webTrackerContinuous from a third terminal
 8. Edit webTrackerContinuous\webTrackerContinuous\Function1.cs in your fav text editor and update:
-   - The email sender's email adn pass
+   - The email sender's email and pass
    - the azure func link from step 5
 9. After saving, run the following command in webTrackerContinuous\webTrackerContinuous:
 > func start
-10. Go back to the https://localhost:5001 tab you opned in step 2, and everything should be working as expected
+10. Edit WebTrackerCoreUI\QueueApp\Program.cs in your fav text editor and update:
+   - the azure func link from step 5
+11. Go back to the https://localhost:5001 tab you opned in step 2, and everything should be working as expected
 
 
 
