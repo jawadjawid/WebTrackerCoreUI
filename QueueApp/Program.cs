@@ -88,7 +88,7 @@ namespace QueueApp
         //    }
         //}
 
-        public static void Run(string url, string email)
+        public static int Run(string url, string email)
         {
             string uri = $"https://nodetracker.azurewebsites.net/api/screenshot?url={url}&email={email}&modify=true";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
@@ -100,6 +100,7 @@ namespace QueueApp
             var response = responseReader.ReadToEnd();
             Console.WriteLine("Response: " + response);
             responseReader.Close();
+            return 0;
         }
     }
 }
