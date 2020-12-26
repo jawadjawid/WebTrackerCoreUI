@@ -12,7 +12,7 @@ A simple tool to track any website and notify you when that website changes.
 - MongoDB: Used tos store all website and email data.
 - ASP.Net MVC, HTML, CSS, JS: Used to create the frontend of the website.
 
-### Other related repos (Used the Microservice architecture to improve seperation of concerns)
+### Other related repos (Used the Microservice architecture to improve seperation of concerns):
 - [The function that does the intial scraping](https://github.com/jawadjawid/trackerAutomation):
 This runs when a track request is submitted, it scrapes the website and stores its data in a MongoDB.
 - [The Time triggered fucntion](https://github.com/jawadjawid/webTrackerContinuousAzureFunc):
@@ -39,7 +39,7 @@ Unfortunately I have decided to stop running the azure functions on the cloud fo
 9. After saving, run the following command in webTrackerContinuous\webTrackerContinuous:
 > func start
 10. Edit WebTrackerCoreUI\QueueApp\Program.cs in your fav text editor and update:
-   - the azure func link from step 5
+    - the azure func link from step 5
 11. Go back to the https://localhost:5001 tab you opned in step 2, and everything should be working as expected
 
 
